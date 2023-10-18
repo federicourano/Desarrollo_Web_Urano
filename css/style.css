@@ -345,4 +345,8 @@ body{
     .subtitulo{
         margin-top: 200px;
     }
+
+    .img-escaladas{
+        max-width: 70%;
+    }
 }
