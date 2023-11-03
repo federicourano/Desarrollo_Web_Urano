@@ -1,0 +1,41 @@
+.header-todo{
+    background-color: black;
+    color: $color-texto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.container-logo-botones{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 1rem;
+        a{
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.15s linear;
+            text-transform: uppercase;
+            &:hover{
+                background: #474747;
+            }
+        }
+    }
+}

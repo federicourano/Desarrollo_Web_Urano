@@ -1,0 +1,183 @@
+.texto-izquierda-img-derecha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-texto;
+    font-size: 18px;
+    margin-top: 100px;
+    padding: 0 8rem;
+    p{
+        width: 70%;
+        padding: 0 10px;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.texto-izquierda-img-derecha-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-texto;
+    font-size: 18px;
+    margin-top: 100px;
+    padding: 0 8rem;
+    p{
+        width: 70%;
+        padding: 0 10px;
+    }
+    img{
+        height: 200px;
+    }
+}
+
+.img-izquierda-texto-derecha{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-texto;
+    font-size: 18px;
+    padding: 0 8rem;
+    p{
+        width: 70%;
+        padding: 0 10px;
+    }
+    img{
+        height: 200px;
+    }
+}
+
+.subtitulo{
+    text-align: center;
+    color: $color-texto;
+    margin-top: 70px;
+    padding: 25px;
+}
+
+.subtitulo-fondo{
+    text-align: center;
+    color: $color-texto;
+    margin-top: 70px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.imagen-div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img-logo{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.contacto-parrafo{
+    margin-top: 35px;
+    text-align: center;
+    color: $color-texto;
+}
+
+.img-escaladas{
+    max-width: 20%;
+    height: auto;
+    border: 5px solid #464242;
+}
+
+.div-centro{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline;
+    justify-content: center;
+}
+
+.div-centro-contacto{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-izquierda{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline;
+    justify-content: left;
+}
+
+.div-derecha{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline;
+    justify-content: right;
+}
+
+.videos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.imagenes-productos{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 500px));
+    gap: 15px;
+    justify-content: center;
+    .caja{
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        border-radius: 5px;
+        background: rgb(0, 0, 0);
+        padding: 0 30px;
+        justify-self: center;
+        &:hover{
+            box-shadow: 0 10px 15px rgba(0,0,0,.3);
+            transform: scale();
+        }
+    }
+    img{
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+.fondo-vivos{
+    width: auto;
+    height: 1050px;
+    background-image: url("../recursos/imagenes/Nickelback-vivo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: $color-texto;
+    display: inline-block;
+}
+
+.boton{
+    text-decoration: dotted;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.contenedor-contacto{
+    min-height: 78vh;
+}
