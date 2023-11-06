@@ -73,7 +73,7 @@ body {
   height: 200px;
 }
 
-.texto-izquierda-img-derecha-2 {
+.texto-izquierda-img-derecha-2, .img-izquierda-texto-derecha {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,32 +82,15 @@ body {
   margin-top: 100px;
   padding: 0 8rem;
 }
-.texto-izquierda-img-derecha-2 p {
+.texto-izquierda-img-derecha-2 p, .img-izquierda-texto-derecha p {
   width: 70%;
   padding: 0 10px;
 }
-.texto-izquierda-img-derecha-2 img {
+.texto-izquierda-img-derecha-2 img, .img-izquierda-texto-derecha img {
   height: 200px;
 }
 
-.img-izquierda-texto-derecha {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: antiquewhite;
-  font-size: 18px;
-  padding: 0 8rem;
-}
-.img-izquierda-texto-derecha p {
-  width: 70%;
-  padding: 0 10px;
-}
-.img-izquierda-texto-derecha img {
-  height: 200px;
-}
-
-.subtitulo {
+.subtitulo, .subtitulo-fondo {
   text-align: center;
   color: antiquewhite;
   margin-top: 70px;
@@ -115,10 +98,6 @@ body {
 }
 
 .subtitulo-fondo {
-  text-align: center;
-  color: antiquewhite;
-  margin-top: 70px;
-  padding: 25px;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
@@ -239,28 +218,21 @@ body {
   min-height: 78vh;
 }
 
-.footer {
+.footer, .footer-2 {
   background: #2e2e2e;
   padding: 2rem;
-  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
-.footer p {
+.footer p, .footer-2 p {
   color: antiquewhite;
 }
 
 .footer-2 {
-  background: rgb(34, 32, 32);
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-.footer-2 p {
-  color: antiquewhite;
+  margin-top: 5rem;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .container-logo-botones {
     display: flex;
     flex-direction: column;
@@ -280,7 +252,7 @@ body {
     width: 100%;
     margin-top: 200px;
   }
-  .texto-izquierda-img-derecha-2 {
+  .texto-izquierda-img-derecha-2, .img-izquierda-texto-derecha {
     display: flex;
     flex-direction: column;
     color: antiquewhite;
@@ -289,7 +261,7 @@ body {
     margin: 0 10px;
     padding: 0 2px;
   }
-  .texto-izquierda-img-derecha-2 p {
+  .texto-izquierda-img-derecha-2 p, .img-izquierda-texto-derecha p {
     width: 100%;
     margin-top: 30px;
   }
@@ -316,13 +288,13 @@ body {
     flex-direction: row;
     font-size: 12px;
   }
-  .footer p {
+  .footer p, .footer-2 p {
     text-align: center;
   }
   .imagenes-productos .caja {
     margin-top: 100px;
   }
-  .subtitulo {
+  .subtitulo, .subtitulo-fondo {
     margin-top: 200px;
   }
   .img-escaladas {
@@ -332,9 +304,17 @@ body {
     width: auto;
     height: 1050px;
     color: antiquewhite;
-    background-image: none;
+    background-image: linear-gradient(to bottom, black, #2e2e2e);
     display: inline-block;
-    background-color: rgb(34, 32, 32);
+  }
+  .contenedor-contacto {
+    background-image: linear-gradient(to bottom, black, #2e2e2e);
+  }
+  .col-12 {
+    margin: 5px;
+  }
+  .col-12 .col-xl-6 {
+    margin: 5px;
   }
 }
 

@@ -34,20 +34,7 @@
 }
 
 .img-izquierda-texto-derecha{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: $color-texto;
-    font-size: 18px;
-    padding: 0 8rem;
-    p{
-        width: 70%;
-        padding: 0 10px;
-    }
-    img{
-        height: 200px;
-    }
+    @extend .texto-izquierda-img-derecha-2
 }
 
 .subtitulo{
@@ -58,10 +45,7 @@
 }
 
 .subtitulo-fondo{
-    text-align: center;
-    color: $color-texto;
-    margin-top: 70px;
-    padding: 25px;
+    @extend .subtitulo;
     background-color: rgba(0, 0, 0, 0.85);
 }
 

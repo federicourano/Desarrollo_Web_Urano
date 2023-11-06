@@ -1,7 +1,6 @@
 .footer{
     background: $color-footer;
     padding: 2rem;
-    margin-top: 5rem;
     display: flex;
     justify-content: center;
     p{
@@ -10,11 +9,6 @@
 }
 
 .footer-2{
-    background: $color-fondo;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    p{
-        color: $color-texto;
-    }
+    @extend .footer;
+    margin-top: 5rem;
 }
